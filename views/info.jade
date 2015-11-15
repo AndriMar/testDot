@@ -1,0 +1,25 @@
+extends ./layout.jade
+mixin line(label, value, cls)
+  li(class=cls)
+    .left= label
+    .right= value
+block main
+  .info-container
+    .photo
+      img(src="http://www.mbl.is/fasteignir/img/pool/ac/acc1bb09fe405352414c664f6ce87e4f9117022a.jpg")
+    .info
+      h2= heimilisfang
+      ul
+        +line('Fastanúmer',fastumer)
+        +line('Matshluti',matshluti)
+        +line('Landsnúmer',landsnumer)
+        +line('Bílskúr',bilskur)
+        +line('Brunabótamat',brunabotamat)
+        +line('Fasteignamat',fasteignamat)
+        br
+        +line('Áætlað verðmat',verdmat,'text-bold')
+      .custom-input
+        input(type="submit",value="Áfram" class="red-button")
+block bottom
+  .bottom.map
+    <iframe width="100%" height="400" frameborder="0" src="http://ja.is/kort/embedded/?zoom=8&x=361660&y=401392&layer=aerial&q=%C3%81sak%C3%B3r+12"></iframe>

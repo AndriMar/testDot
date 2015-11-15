@@ -1,0 +1,79 @@
+body {
+  font: 14px "Helvetica Nueue", "Lucida Grande", Arial, sans-serif;
+  margin: 0px; }
+
+.head {
+  padding: 10px 30px; }
+  .head .logo {
+    width: 40px; }
+  .head .logo-text {
+    margin-left: 20px;
+    line-height: 43px;
+    vertical-align: top;
+    font-size: 20px; }
+
+.image-backround {
+  margin: auto;
+  display: block;
+  max-height: 100%;
+  max-width: 100%;
+  opacity: 0.2; }
+
+.main {
+  position: relative; }
+  .main .input-box {
+    width: 250px;
+    position: absolute;
+    top: calc(50% - 35px);
+    right: calc(50% - 125px); }
+
+.custom-input, .red-button {
+  margin-bottom: 10px; }
+  .custom-input input, .red-button input {
+    height: 30px;
+    width: 100%;
+    border: none;
+    padding: 10px;
+    font-size: 14px; }
+
+.red-button {
+  background-color: #A03733;
+  color: white;
+  cursor: pointer;
+  padding: 1px 10px !important; }
+
+.info-container {
+  top: calc(50% - 233px);
+  right: calc(50% - 400px);
+  width: 800px;
+  height: 267px;
+  position: absolute; }
+  .info-container .photo {
+    width: 50%;
+    display: inline-block; }
+    .info-container .photo img {
+      width: 100%; }
+  .info-container .info {
+    height: 100%;
+    vertical-align: top;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 0 30px;
+    display: inline-block;
+    width: calc(50% - 60px); }
+    .info-container .info .left, .info-container .info .right {
+      width: 50%;
+      display: inline-block; }
+    .info-container .info .right {
+      text-align: right; }
+    .info-container .info ul {
+      padding: 0; }
+    .info-container .info li {
+      list-style: none; }
+    .info-container .info .text-bold {
+      font-weight: bold; }
+    .info-container .info .red-button {
+      width: 100px;
+      float: right; }
+
+.bottom.map {
+  margin-top: -200px; }

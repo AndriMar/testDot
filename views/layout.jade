@@ -1,0 +1,12 @@
+html
+  head
+    title Jade test
+    link(rel="stylesheet", href="./css/style.css")
+    script(type='text/javascript' src='scripts/jquery-1.11.3.min.js')
+    script(type='text/javascript' src='scripts/main.js')
+  body
+    include header
+    .main
+      img(src="images/rvk-background.jpg" class="image-backround")
+      block main
+    block bottom
